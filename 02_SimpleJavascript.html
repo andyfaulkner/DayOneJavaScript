@@ -8,15 +8,17 @@
 </head>
 
 <body>
-    
+    <!-- span tag where id set to demo -->
     <span id="demo"></span>
 
 <script>
+    //Listen for the load event of the DOM
     window.addEventListener('load',myFirst, false);
     
     function myFirst()
     {
         window.alert("Hello World using an Event listener");
+        //Write to the webpage where id=demo
         document.getElementById("demo").innerHTML = "Hello World";
     }
 </script>
